@@ -1,0 +1,93 @@
+Scope of Work: Daily Trivia Bot for Discord
+*This scope of work was generated using AI based on prompts using the original project guidelines
+
+1. Project Overview
+The goal of this project is to develop a Daily Trivia Bot for Discord using Python. The bot will fetch trivia questions from an API or a predefined dataset, post them in a Discord server, accept user responses, validate answers, and maintain a leaderboard.
+
+
+2. Project Objectives
+•	Automate daily trivia questions in a Discord server.
+•	Fetch questions from an API (e.g., Open Trivia Database) or a local dataset.
+•	Collect and validate user responses.
+•	Track and display user scores over time.
+•	Ensure the bot runs reliably with minimal manual intervention.
+
+
+3. Features & Functionality
+Core Features
+•	Question Fetching:
+•	Retrieve a new trivia question daily from an API or dataset.
+•	Randomize question selection if using a dataset.
+•	Message Handling:
+•	Post the daily trivia question in a specific Discord channel.
+•	Accept user answers via text commands or reactions.
+•	Provide immediate feedback on correctness.
+•	Score Tracking:
+•	Maintain a leaderboard of user scores.
+•	Assign points based on correct responses.
+•	Store user scores persistently (using a database or JSON file).
+•	Leaderboard & Stats:
+•	Allow users to check their scores using a command.
+•	Display top participants in the server.
+•	Bot Commands:
+•	!trivia → Manually trigger a trivia question.
+•	!answer <your_answer> → Submit an answer.
+•	!score → Show user’s current score.
+•	!leaderboard → Display top scorers.
+•	!help → List available commands.
+
+Additional Features (Optional/Future Enhancements)
+•	Timer-based auto-closing of responses.
+•	Different difficulty levels for questions.
+•	Category selection (e.g., science, history, etc.).
+•	Bonus points for streaks.
+•	Integration with Discord roles for rewards.
+
+
+4. Tech Stack
+•	Programming Language: Python
+•	Libraries & APIs:
+•	discord.py (for bot interaction with Discord)
+•	requests (for API-based trivia fetching)
+•	json or sqlite3 (for score storage)
+•	Hosting & Deployment:
+•	Run locally or deploy on a cloud service (e.g., Heroku, AWS, Replit).
+
+
+5. Development Timeline
+Phase	Tasks	Time Estimate
+Setup	Configure bot, API access	1-2 days
+Trivia Logic	Fetch questions, validate answers	3-4 days
+Score System	Implement leaderboard, storage	2-3 days
+Command Setup	Implement bot commands	2-3 days
+Testing	Debug and refine features	2-3 days
+Deployment	Host the bot, optimize performance	2-4 days
+
+
+6. Deliverables
+•	A functional Discord bot that posts daily trivia.
+•	A scoring and leaderboard system.
+•	Well-documented code and setup instructions.
+•	Deployment guide (if applicable).
+
+
+7. Constraints & Assumptions
+•	The bot will run in a single Discord server initially.
+•	Users will interact via text commands.
+•	API-based questions depend on external availability.
+•	Persistence method (database or JSON) will be simple for ease of use.
+
+
+8. Risks & Mitigation
+Risk	Mitigation Strategy
+API downtime	Use a fallback dataset
+Bot spam or abuse	Implement rate limiting
+Data loss	Regular backups of scores
+Hosting issues	Ensure auto-restart mechanisms
+
+
+9. Acceptance Criteria
+•	The bot successfully posts trivia questions daily.
+•	Users can submit answers, and responses are validated.
+•	Scores are accurately tracked and retrievable.
+•	The leaderboard correctly ranks users.
